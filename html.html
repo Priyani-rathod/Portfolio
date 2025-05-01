@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyani Rathod - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #ffcc00;
+      --background: #0f0f0f;
+      --text: #f0f0f0;
+      --accent: #ff6600;
+      --card: #1e1e1e;
+      --radius: 8px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: var(--background); color: var(--text); line-height: 1.6; }
+    a { color: var(--primary); text-decoration: none; }
+    nav { background: rgba(15, 15, 15, 0.9); padding: 1rem 0; position: fixed; width: 100%; z-index: 1000; }
+    nav .container { display: flex; justify-content: space-between; align-items: center; width: 90%; margin: auto; }
+    nav ul { display: flex; gap: 1.5rem; list-style: none; }
+    nav ul li a { font-weight: 600; }
+    section { padding: 6rem 1rem; max-width: 1100px; margin: auto; }
+    .hero { min-height: 100vh; display: flex; flex-direction: row; justify-content: space-between; align-items: center; text-align: left; gap: 2rem; }
+    .hero-content { flex: 1; }
+    .hero-image { flex: 1; display: flex; justify-content: center; }
+    .hero-image img { width: 250px; height: 250px; border-radius: 50%; border: 4px solid var(--primary); object-fit: cover; }
+    .btn { padding: 0.8rem 1.5rem; border: none; border-radius: var(--radius); cursor: pointer; font-weight: 600; background: var(--primary); color: #000; margin-top: 1rem; transition: 0.3s ease; display: inline-block; margin-right: 1rem; }
+    .btn:hover { background: var(--accent); color: #fff; }
+    .social-icons { margin-top: 1.5rem; }
+    .social-icons a { margin-right: 1rem; font-size: 1.5rem; color: var(--text); transition: color 0.3s; }
+    .social-icons a:hover { color: var(--primary); }
+    .card { background: var(--card); padding: 2rem; border-radius: var(--radius); margin-bottom: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.3); transition: transform 0.3s ease; }
+    .card:hover { transform: translateY(-5px); }
+    h2 { font-size: 2rem; margin-bottom: 1.5rem; text-align: center; color: var(--primary); }
+    h3 { margin-bottom: 0.5rem; }
+    ul { padding-left: 1.2rem; }
+    ul li { margin-bottom: 0.5rem; }
+    footer { text-align: center; padding: 2rem 0; background: #111; color: #aaa; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      nav .container { flex-direction: column; }
+      nav ul { flex-direction: column; align-items: center; gap: 1rem; }
+      .hero { flex-direction: column; text-align: center; }
+      .hero-image { margin-top: 2rem; }
+    }
+      @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInLeft {
+      0% { opacity: 0; transform: translateX(-50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInRight {
+      0% { opacity: 0; transform: translateX(50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <h1>Priyani R.</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Hey, I'm Priyani Rathod</h2>
+      <p>Data Science Engineer passionate about crafting AI-digital experiences.</p>
+      <div>
+        <a href="#contact" class="btn">Let's Connect</a>
+        <a href="resume.pdf" class="btn" download><i class="fas fa-file-alt"></i> Resume</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/your-profile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-username" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="profile.jpg" alt="Priyani Rathod">
+    </div>
+  </section>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>Hello! I'm Priyani Rathod, a passionate and self-motivated Data Science Engineer driven by a love for clean code and innovative design. I specialize in creating responsive, accessible, and user-friendly interfaces that provide a seamless experience across all devices.
+    <br><br>With a foundation in Computer Science and a current focus on Artificial Intelligence and Data Science, I enjoy exploring the intersection of technology and creativity. Whether it's front-end development, Python scripting, or data visualization, I love building tools that make life easier and more connected.
+    <br><br>Outside of tech, I'm actively involved in communities like Kaggle Koders and Google Developer Group, where I serve as an AI Co-Lead and contribute through mentorship and collaboration.</p>
+  </div>
+</section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+      <ul>
+        <li>Member of Kaggle Koders</li>
+        <li>AI Co-Lead at Google Developer Group</li>
+        <li>Member of Training and Placement Cell</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>SIH Project</h3>
+      <p>Lets learn the constitution in simpler manner is a smart education website in which you can learn about constitution rules in a fun way and also it has a law gpt which make it more interesting</p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Website</h3>
+      <p>This website! Fully responsive and built with HTML/CSS/JavaScript.</p>
+    </div>
+    <div class="card">
+      <h3>Shopping Cart Project</h3>
+      <p>A Python-based shopping cart system that supports adding, removing, and managing items with total cost calculation. Ideal for beginners exploring object-oriented programming.</p>
+    </div>
+    <div class="card">
+      <h3>Arthvyavastha - Budgeting App</h3>
+      <p>A personal budgeting application developed using Python and its libraries to help users track expenses, visualize spending patterns, and manage finances efficiently.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>B.Tech in Computer Science & Engineering (AI & DS)</h3>
+      <p>Currently pursuing second year, focusing on Artificial Intelligence and Data Science. Engaged in projects that merge technology with problem-solving in real-world scenarios.</p>
+    </div>
+    <div class="card">
+      <h3>Senior Secondary Education (Class 12)</h3>
+      <p>Achieved 93.6% in the Science stream with a specialization in Computer Science. Demonstrated academic excellence and a strong foundation in technical subjects.</p>
+    </div>
+    <div class="card">
+      <h3>Secondary Education (Class 10)</h3>
+      <p>Scored 93%, building a solid base in core subjects and developing an early interest in computing and logical thinking.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:priyanirathod1695@gmail.com">priyanirathod1695@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919407254556">+91 94072 54556</a></p>
+      <p><a href="https://linkedin.com/in/your-profile">LinkedIn</a> | <a href="https://github.com/your-username">GitHub</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Priyani Rathod. All rights reserved.</p>
+  </footer>
+</body>
+</html>
